@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Cliente: as Cliente
+
+Cliente --- (Meter dinero)
+Cliente --- (Pedir azucar)
+Cliente --- (Pedir Producto)
+Cliente --- (Cancelar)
+
+
+(Pedir Producto)  ..> (Devolver dinero) :<<include>>
+(Cancelar) ..> (Devolver dinero) :<<include>>
+
+
+
+
+@enduml
